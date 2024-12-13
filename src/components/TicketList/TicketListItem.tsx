@@ -21,14 +21,14 @@ export const TicketListItem: FC<ITicketListItem> = ({
       onClick={() => toggleViewTicket(ticket)}
       tabIndex={0}
       className={cn(
-        "flex gap-6 rounded-md items-center cursor-pointer transition-all py-4 px-6 shadow-sm border border-slate-200/55",
+        "flex gap-6 rounded-md h-32 items-center cursor-pointer transition-all py-4 px-6 shadow-sm border border-slate-200/55",
         active ? "bg-sky-100" : "bg-gray-50"
       )}
     >
       <TicketIcon priority={priority} />
       <div className="flex flex-col gap-3 text-slate-800">
         <p className="text-lg font-semibold">{id}</p>
-        <p className="text-base">{subject}</p>
+        <p className="text-base text-ellipsis max-w-full">{subject}</p>
       </div>
     </div>
   );
