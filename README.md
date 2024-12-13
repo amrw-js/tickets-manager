@@ -7,8 +7,7 @@ A comprehensive ticket management system for efficient issue tracking.
 Please be patient when loading the application, as we generate mock data for 2000 rows on the client-side. This may take a few seconds.
 
 ## Demo
-Live Demo[https://tickets-manager-two.vercel.app/]
-
+[Live demo]([http://example.com](https://tickets-manager-two.vercel.app/))
 
 ## Cloning the Repository
 git clone https://github.com/amrw-js/tickets-manager
