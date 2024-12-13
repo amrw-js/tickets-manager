@@ -3,6 +3,9 @@
 A comprehensive ticket management system for efficient issue tracking.
 
 
+## Important Note
+Please be patient when loading the application, as we generate mock data for 2000 rows on the client-side. This may take a few seconds.
+
 ## Cloning the Repository
 git clone https://github.com/amrw-js/tickets-manager
 
@@ -16,7 +19,7 @@ git clone https://github.com/amrw-js/tickets-manager
 ## Running the Application
 1. npm run dev
 2. yarn dev (alternative)
-Access the application at http://localhost:5173.
+Access the application at http://localhost:5173
 
 
 ## Building for Production
