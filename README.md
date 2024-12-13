@@ -22,11 +22,15 @@ git clone https://github.com/amrw-js/tickets-manager
 ## Running the Application
 1. npm run dev
 2. yarn dev (alternative)
+
+
 Access the application at http://localhost:5173
 
 
 ## Building for Production
 npm run build
+
+
 yarn build (alternative)
 
 ## License
