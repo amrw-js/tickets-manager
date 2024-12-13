@@ -19,7 +19,7 @@ export const App = () => {
         viewedTicket={viewedTicket}
         toggleViewTicket={toggleViewTicket}
       />
-      <TicketDescription />
+      <TicketDescription viewedTicket={viewedTicket} />
     </Layout>
   );
 };

@@ -14,7 +14,7 @@ export const TicketsList: FC<ITicketsList> = (props) => {
   const tickets = useMemo(() => generateMockTickets(100), []);
 
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-3 max-h-full overflow-auto">
       {tickets.map((ticket) => (
         <TicketListItem
           active={viewedTicket?.uuid === ticket.uuid}

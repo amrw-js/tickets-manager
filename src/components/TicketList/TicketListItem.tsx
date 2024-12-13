@@ -21,8 +21,8 @@ export const TicketListItem: FC<ITicketListItem> = ({
       onClick={() => toggleViewTicket(ticket)}
       tabIndex={0}
       className={cn(
-        "flex gap-6 rounded-md items-center cursor-pointer transition-all py-4 px-6 bg-gray-100",
-        active && "bg-sky-200"
+        "flex gap-6 rounded-md items-center cursor-pointer transition-all py-4 px-6 shadow-sm border border-slate-200/55",
+        active ? "bg-sky-100" : "bg-gray-50"
       )}
     >
       <TicketIcon priority={priority} />

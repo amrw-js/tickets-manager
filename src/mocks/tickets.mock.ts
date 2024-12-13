@@ -9,7 +9,7 @@ export const generateMockTickets = (count: number): ITicket[] => {
     subject: faker.lorem.words(5),
     priority: faker.helpers.arrayElement(PRIORITIES),
     status: faker.helpers.arrayElement(STATUS),
-    description: faker.lorem.sentence(),
+    description: faker.lorem.sentence({ min: 500, max: 1000 }),
     created_at: faker.date.recent(),
     updated_at: faker.date.recent(),
     author: {
