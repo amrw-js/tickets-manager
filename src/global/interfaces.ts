@@ -3,7 +3,7 @@ export type status = "Open" | "In Progress" | "Resolved";
 
 export enum PRIORITY {
   LOW = "P1",
-  MEDIUM = "P2",
+  Mid = "P2",
   HIGH = "P3",
 }
 
