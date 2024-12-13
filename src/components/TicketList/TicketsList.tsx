@@ -1,14 +1,27 @@
 import { FC, useMemo } from "react";
 import { generateMockTickets } from "../../mocks/tickets.mock";
 import { TicketListItem } from "./TicketListItem";
+import { ITicket } from "../../global/interfaces";
 
-export const TicketsList: FC = () => {
-  const tickets = useMemo(() => generateMockTickets(5000), []);
+interface ITicketsList {
+  viewedTicket: ITicket | null;
+  toggleViewTicket: (ticket: ITicket) => void;
+}
+
+export const TicketsList: FC<ITicketsList> = (props) => {
+  const { viewedTicket, toggleViewTicket } = props;
+
+  const tickets = useMemo(() => generateMockTickets(100), []);
 
   return (
     <div className="flex flex-col gap-3">
       {tickets.map((ticket) => (
-        <TicketListItem key={ticket.uuid} ticket={ticket} />
+        <TicketListItem
+          active={viewedTicket?.uuid === ticket.uuid}
+          key={ticket.uuid}
+          ticket={ticket}
+          toggleViewTicket={toggleViewTicket}
+        />
       ))}
     </div>
   );
